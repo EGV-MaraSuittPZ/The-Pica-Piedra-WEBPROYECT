@@ -1,0 +1,203 @@
+/* ==========================================================
+   The Pica Piedra - Hoja de estilos propia
+   Se carga DESPUÉS de Bootstrap para poder sobrescribirlo.
+   Contenido:
+     1. Variables (colores y tipografías)
+     2. Estilos generales
+     3. Cabecera y menú de navegación
+     4. Portada (hero)
+     5. Contenido principal, tarjetas y listas
+     6. Galería
+     7. Formulario de contacto
+     8. Pie de página
+     9. Adaptación a pantallas pequeñas (hasta 400 px)
+   ========================================================== */
+
+/* 1. Variables: tonos piedra sobre la estructura de la plantilla UniClub */
+:root {
+  --color-texto: #222222;          /* texto principal: contraste alto sobre blanco */
+  --color-fondo: #ffffff;          /* fondo general */
+  --color-fondo-suave: #f1eee9;    /* gris arena para secciones alternas */
+  --color-primario: #6b5b4b;       /* marrón piedra para enlaces y detalles (contraste 6,5:1) */
+  --color-oscuro: #111111;         /* fondo del pie y de la portada */
+  --fuente-texto: "Jost", sans-serif;
+  --fuente-titulos: "Josefin Sans", sans-serif;
+}
+
+/* 2. Estilos generales */
+body {
+  font-family: var(--fuente-texto);
+  color: var(--color-texto);
+  background-color: var(--color-fondo);
+  line-height: 1.7;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--fuente-titulos);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+a {
+  color: var(--color-primario);
+}
+
+/* 3. Cabecera y menú: el enlace de la página actual se ve destacado */
+.cabecera-principal {
+  background-color: var(--color-fondo);
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.menu-principal .navbar-brand {
+  color: var(--color-oscuro);
+  font-family: var(--fuente-titulos);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.menu-principal .nav-link {
+  color: var(--color-texto);
+  font-family: var(--fuente-titulos);
+  text-transform: uppercase;
+  border-bottom: 3px solid transparent;
+}
+
+.menu-principal .nav-link:hover,
+.menu-principal .nav-link:focus {
+  color: var(--color-primario);
+}
+
+.menu-principal .enlace-activo {
+  color: var(--color-primario);
+  font-weight: 700;
+  border-bottom-color: var(--color-primario);
+}
+
+/* 4. Portada de la página de inicio */
+.portada {
+  background-image: url("../img/banner-img1.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 0;
+}
+
+.portada-caja {
+  background-color: var(--color-oscuro);
+  color: #ffffff;
+  padding: 2.5rem;
+  text-align: center;
+}
+
+.portada-caja h1 {
+  font-size: 3rem;
+}
+
+/* 5. Contenido principal, tarjetas y listas */
+.contenido-principal {
+  padding: 3rem 0;
+}
+
+.seccion-suave {
+  background-color: var(--color-fondo-suave);
+  padding: 3rem 0;
+}
+
+.tarjeta-servicio {
+  height: 100%;
+  padding: 1.5rem;
+  background-color: var(--color-fondo);
+  border: 1px solid #dbdbdb;
+  border-top: 4px solid var(--color-primario);
+}
+
+.tarjeta-servicio h2,
+.tarjeta-servicio h3 {
+  font-size: 1.25rem;
+}
+
+.boton-principal {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  color: #ffffff;
+  background-color: var(--color-oscuro);
+  border: 2px solid var(--color-oscuro);
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in;
+}
+
+.boton-principal:hover,
+.boton-principal:focus {
+  color: var(--color-oscuro);
+  background-color: var(--color-fondo);
+}
+
+/* 6. Galería: imágenes que nunca se salen de su columna */
+.galeria figure {
+  margin: 0 0 1.5rem;
+}
+
+.galeria img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.galeria figcaption {
+  padding-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #555555;
+}
+
+/* 7. Formulario de contacto */
+.formulario-contacto label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #727272;
+}
+
+/* 8. Pie de página */
+.pie-pagina {
+  padding: 2rem 0;
+  color: #ffffff;
+  background-color: var(--color-oscuro);
+  text-align: center;
+}
+
+.pie-pagina a {
+  color: #ffffff;
+}
+
+/* 9. Pantallas pequeñas: se comprueba el diseño hasta 400 px de ancho */
+@media screen and (max-width: 576px) {
+  .portada {
+    padding: 2rem 0;
+  }
+
+  .portada-caja {
+    padding: 1.5rem 1rem;
+  }
+
+  .portada-caja h1 {
+    font-size: 2rem;
+  }
+
+  .contenido-principal,
+  .seccion-suave {
+    padding: 2rem 0;
+  }
+
+  .menu-principal .nav-link {
+    padding: 0.75rem 0;
+  }
+}

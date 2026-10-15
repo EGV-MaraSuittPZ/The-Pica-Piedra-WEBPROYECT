@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Camisetas estampadas con diseños propios y personalizados para clubes, grupos y marcas que quieren destacar en la calle.">
+  <title>Inicio | The Pica Piedra</title>
+  <!-- Fuentes de la plantilla UniClub (Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&amp;family=Jost:wght@400;600;700&amp;display=swap" rel="stylesheet">
+  <!-- CSS del framework (Bootstrap 5, el mismo que usa la plantilla; el código original está en plantilla-original/) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <!-- CSS propio (se carga el último para poder sobrescribir al framework) -->
+  <link rel="stylesheet" href="estilos/estilos-propios.css">
+</head>
+<body>
+  <header class="cabecera-principal">
+    <nav class="menu-principal navbar navbar-expand-md" aria-label="Menú principal">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">The Pica Piedra</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-navegacion" aria-controls="menu-navegacion" aria-expanded="false" aria-label="Mostrar u ocultar el menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu-navegacion">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link enlace-activo" href="index.html" aria-current="page">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="paginas/sobre-nosotros.html">Sobre nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="paginas/servicios.html">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="paginas/galeria.html">Galería</a></li>
+            <li class="nav-item"><a class="nav-link" href="paginas/contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="contenido-principal p-0">
+    <section class="portada">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-lg-6 offset-md-2 offset-lg-3">
+            <div class="portada-caja">
+              <h1>Camisetas que dejan huella</h1>
+              <p>En The Pica Piedra diseñamos y estampamos camisetas de calidad para clubes, grupos y marcas.</p>
+              <a class="boton-principal" href="paginas/servicios.html">Ver servicios</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container py-5">
+      <h2 class="text-center mb-4">Por qué elegirnos</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="tarjeta-servicio">
+            <h3>Calidad garantizada</h3>
+            <p>Tejidos suaves y tintas duras como la piedra, que aguantan lavado tras lavado.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="tarjeta-servicio">
+            <h3>Diseño a medida</h3>
+            <p>Cincelamos tu idea hasta convertirla en un estampado único, del boceto a la prenda.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="tarjeta-servicio">
+            <h3>Pedidos para grupos</h3>
+            <p>Precios especiales para equipos, asociaciones y eventos, con entregas puntuales.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion-suave galeria">
+      <div class="container">
+        <h2 class="text-center mb-4">Novedades</h2>
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <figure>
+              <img src="img/item1.jpg" alt="Camiseta negra con un logotipo circular en el pecho" width="350" height="447" class="img-fluid" loading="lazy">
+              <figcaption>Camiseta con sello circular en el pecho</figcaption>
+            </figure>
+          </div>
+          <div class="col-12 col-md-4">
+            <figure>
+              <img src="img/item3.jpg" alt="Camiseta negra de manga larga con un texto estampado en blanco" width="350" height="447" class="img-fluid" loading="lazy">
+              <figcaption>Manga larga con texto en blanco</figcaption>
+            </figure>
+          </div>
+          <div class="col-12 col-md-4">
+            <figure>
+              <img src="img/item4.jpg" alt="Camiseta negra con un gran sello circular estampado" width="350" height="447" class="img-fluid" loading="lazy">
+              <figcaption>Gran estampado circular a la espalda</figcaption>
+            </figure>
+          </div>
+        </div>
+        <p class="text-center mb-0"><a class="boton-principal" href="paginas/galeria.html">Ver toda la galería</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie-pagina">
+    <div class="container">
+      <p class="mb-1">&copy; 2026 The Pica Piedra</p>
+      <p class="mb-0">Plantilla base: <a href="https://templatesjungle.com/">UniClub de TemplatesJungle</a></p>
+    </div>
+  </footer>
+
+  <!-- JavaScript del framework (necesario para desplegar el menú en móvil) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>

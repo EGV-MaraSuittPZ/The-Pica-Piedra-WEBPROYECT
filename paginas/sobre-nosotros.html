@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Conoce nuestra historia, el equipo y los valores que guían cada camiseta que diseñamos y estampamos en nuestro taller.">
+  <title>Sobre nosotros | The Pica Piedra</title>
+  <!-- Fuentes de la plantilla UniClub (Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&amp;family=Jost:wght@400;600;700&amp;display=swap" rel="stylesheet">
+  <!-- CSS del framework (Bootstrap 5, el mismo que usa la plantilla; el código original está en plantilla-original/) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <!-- CSS propio (se carga el último para poder sobrescribir al framework) -->
+  <link rel="stylesheet" href="../estilos/estilos-propios.css">
+</head>
+<body>
+  <header class="cabecera-principal">
+    <nav class="menu-principal navbar navbar-expand-md" aria-label="Menú principal">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">The Pica Piedra</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-navegacion" aria-controls="menu-navegacion" aria-expanded="false" aria-label="Mostrar u ocultar el menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu-navegacion">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link enlace-activo" href="sobre-nosotros.html" aria-current="page">Sobre nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="contenido-principal">
+    <div class="container">
+      <h1>Sobre nosotros</h1>
+      <div class="row align-items-center my-4">
+        <div class="col-md-6">
+          <h2>Nuestra historia</h2>
+          <p>The Pica Piedra nació en un pequeño taller con una idea sencilla: que cualquier persona o grupo pudiera llevar puesto un diseño propio.</p>
+          <p>Hoy seguimos trabajando igual: como un buen picapedrero, cincelamos cada diseño con paciencia hasta que queda perfecto, y acompañamos al cliente en todo el proceso.</p>
+        </div>
+        <div class="col-md-6 galeria">
+          <figure>
+            <img src="../img/category1.jpg" alt="Persona de espaldas con una camiseta negra con una mano dibujada en blanco" width="600" height="300" class="img-fluid">
+            <figcaption>Uno de nuestros estampados en blanco sobre negro</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <h2 class="mt-4 mb-3">Nuestros valores</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="tarjeta-servicio">
+            <h3>Cercanía</h3>
+            <p>Hablamos contigo en cada fase del pedido y resolvemos las dudas sin prisas.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="tarjeta-servicio">
+            <h3>Calidad</h3>
+            <p>Probamos los tejidos y las tintas antes de producir para evitar sorpresas.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="tarjeta-servicio">
+            <h3>Compromiso</h3>
+            <p>Cumplimos los plazos acordados y cuidamos el impacto de nuestros materiales.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="pie-pagina">
+    <div class="container">
+      <p class="mb-1">&copy; 2026 The Pica Piedra</p>
+      <p class="mb-0">Plantilla base: <a href="https://templatesjungle.com/">UniClub de TemplatesJungle</a></p>
+    </div>
+  </footer>
+
+  <!-- JavaScript del framework (necesario para desplegar el menú en móvil) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
