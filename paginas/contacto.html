@@ -54,28 +54,12 @@
             <label for="mensaje">Mensaje</label>
             <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
 
-            <fieldset class="valoracion">
-            <legend>Valoración</legend>
-
-            <p>¿Qué valoración le das a nuestra página?</p>
-
-    <div class="estrellas">
-            <input type="radio" id="estrella1" name="valoracion" value="1" required>
-            <label for="estrella1">★</label>
-
-            <input type="radio" id="estrella2" name="valoracion" value="2">
-            <label for="estrella2">★★</label>
-
-            <input type="radio" id="estrella3" name="valoracion" value="3">
-            <label for="estrella3">★★★</label>
-
-            <input type="radio" id="estrella4" name="valoracion" value="4">
-            <label for="estrella4">★★★★</label>
-
-            <input type="radio" id="estrella5" name="valoracion" value="5">
-            <label for="estrella5">★★★★★</label>
-    </div>
-</fieldset>
+            <div class="privacidad">
+              <input type="checkbox" id="privacidad" name="privacidad" required>
+              <label for="privacidad">
+              Acepto la política de privacidad y los términos de uso
+              </label>
+            </div>
             
 
             <button class="boton-principal mt-3" type="submit">Enviar mensaje</button>
