@@ -153,16 +153,16 @@ a {
 }
 
 /* 7. Formulario de contacto */
-.privacidad label{
-   display: flex;
-   text-align: left;
-   
+
 .formulario-contacto label {
   display: block;
   margin-top: 1rem;
   font-weight: 600;
 }
-
+.privacidad label{
+   display: flex;
+   text-align: left;
+}
 .formulario-contacto input,
 .formulario-contacto textarea {
   width: 100%;
