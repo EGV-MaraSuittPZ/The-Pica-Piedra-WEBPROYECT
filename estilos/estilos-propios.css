@@ -153,8 +153,9 @@ a {
 }
 
 /* 7. Formulario de contacto */
-.privacidad {
+.privacidad label{
    display: flex;
+   text-align: left;
    
 .formulario-contacto label {
   display: block;
