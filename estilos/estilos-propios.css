@@ -178,7 +178,7 @@ a {
   color: #ffffff;
 }
 
-/* 9. Pantallas pequeñas: se comprueba el diseño hasta 400 px de ancho */
+/* 9. Pantallas pequeñas: se comprueba el diseño hasta 576 px de ancho */
 @media screen and (max-width: 576px) {
   .portada {
     padding: 2rem 0;
