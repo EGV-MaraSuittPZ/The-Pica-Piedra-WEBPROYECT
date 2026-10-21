@@ -54,12 +54,22 @@
             <label for="mensaje">Mensaje</label>
             <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
 
-            <div class="privacidad">
-              <input type="checkbox" id="privacidad" name="privacidad" required>
-              <label for="privacidad">
-              Acepto la política de privacidad y los términos de uso
-              </label>
-            </div>
+            <label for="motivo">Motivo del contacto:</label>
+
+            <input list="motivos" id="motivo" name="motivo">
+
+            <datalist id="motivos">
+                <option value="Sugerencia">
+                <option value="Queja">
+                <option value="Información">
+                <option value="Colaboración">
+                <option value="Otro">
+            </datalist>
+
+            <label>
+            <input type="checkbox" name="privacidad" required>
+            Acepto la <a href="/politica-de-privacidad">política de privacidad</a> y los <a href="/terminos-de-uso">términos de uso</a>
+            </label>
             
 
             <button class="boton-principal mt-3" type="submit">Enviar mensaje</button>
