@@ -165,6 +165,17 @@ a {
   padding: 0.6rem;
   border: 1px solid #727272;
 }
+.privacidad {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    text-align: left;
+  }
+.privacidad input[type="checkbox"] {
+    width: auto;
+    margin: 3px 0 0;
+    flex-shrink: 0;
+  }
 
 /* 8. Pie de página */
 .pie-pagina {
