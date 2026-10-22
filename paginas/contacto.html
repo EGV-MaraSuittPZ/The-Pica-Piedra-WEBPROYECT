@@ -41,7 +41,12 @@
       <div class="row g-5">
         <div class="col-md-7">
           <h2>Escríbenos</h2>
-          <form class="formulario-contacto" action="mailto:info@thepicapiedra.example" method="post" enctype="text/plain">
+          <form class="formulario-contacto" action="https://formsubmit.co/info@thepicapiedra.com" method="post">
+            <!-- Campos ocultos de configuración del servicio de envío -->
+            <input type="hidden" name="_subject" value="Nuevo mensaje desde la web The Pica Piedra">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+
             <label for="nombre">Nombre</label>
             <input type="text" id="nombre" name="nombre" required>
 
@@ -55,22 +60,19 @@
             <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
 
             <label for="motivo">Motivo del contacto:</label>
-
             <input list="motivos" id="motivo" name="motivo">
-
             <datalist id="motivos">
-                <option value="Sugerencia">
-                <option value="Queja">
-                <option value="Información">
-                <option value="Colaboración">
-                <option value="Otro">
+              <option value="Sugerencia">
+              <option value="Queja">
+              <option value="Información">
+              <option value="Colaboración">
+              <option value="Otro">
             </datalist>
 
             <label class="privacidad">
-            <input type="checkbox" name="privacidad" required>
-            <span>Acepto la <a href="/politica-de-privacidad">política de privacidad</a> y los <a href="/terminos-de-uso">términos de uso</a></span>
+              <input type="checkbox" name="privacidad" required>
+              <span>Acepto que The Pica Piedra use mis datos únicamente para responder a este mensaje.</span>
             </label>
-            
 
             <button class="boton-principal mt-3" type="submit">Enviar mensaje</button>
           </form>
@@ -81,8 +83,8 @@
             The Pica Piedra<br>
             Calle Madre Vedruna, 12<br>
             01008 Vitoria<br>
-            Teléfono: <a href="tel:+34000000000">697 59 42 75</a><br>
-            Correo: <a href="mailto:info@thepicapiedra.example">info@thepicapiedra.com</a>
+            Teléfono: <a href="tel:+34697594275">697 59 42 75</a><br>
+            Correo: <a href="mailto:info@thepicapiedra.com">info@thepicapiedra.com</a>
           </address>
           <p>Horario: de lunes a viernes, de 9:00 a 18:00.</p>
         </div>
