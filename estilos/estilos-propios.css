@@ -1,25 +1,17 @@
-/* Variables */
-:root {
-  --texto: #222222;
-  --arena: #f1eee9;
-  --piedra: #6b5b4b;
-  --oscuro: #111111;
-}
-
 /* Estilos generales */
 body {
   font-family: "Jost", sans-serif;
-  color: var(--texto);
+  color: #222222;
   line-height: 1.7;
 }
 h1, h2, h3 {
   font-family: "Josefin Sans", sans-serif;
   text-transform: uppercase;
 }
-a { color: var(--piedra); }
+a { color: #6b5b4b; }
 
 /* Menú: enlace de la página actual */
-.enlace-activo { font-weight: 700; border-bottom: 3px solid var(--piedra); }
+.enlace-activo { font-weight: 700; border-bottom: 3px solid #6b5b4b; }
 
 /* Portada */
 .portada {
@@ -28,7 +20,7 @@ a { color: var(--piedra); }
   padding: 4rem 0;
 }
 .portada-caja {
-  background-color: var(--oscuro);
+  background-color: #111111;
   color: #ffffff;
   padding: 2.5rem;
   text-align: center;
@@ -36,14 +28,14 @@ a { color: var(--piedra); }
 
 /* Secciones, tarjetas y botón */
 .seccion-suave {
-  background-color: var(--arena);
+  background-color: #f1eee9;
   padding: 3rem 0;
 }
-.tarjeta-servicio { padding: 1.5rem; border-top: 4px solid var(--piedra); }
+.tarjeta-servicio { padding: 1.5rem; border-top: 4px solid #6b5b4b; }
 .boton-principal {
   padding: 0.75rem 2rem;
   color: #ffffff;
-  background-color: var(--oscuro);
+  background-color: #111111;
   text-decoration: none;
 }
 
@@ -52,7 +44,7 @@ a { color: var(--piedra); }
 .formulario-contacto input, .formulario-contacto textarea { width: 100%; border: 1px solid #727272; }
 
 /* Pie de página */
-.pie-pagina { padding: 2rem 0; color: #ffffff; background-color: var(--oscuro); text-align: center; }
+.pie-pagina { padding: 2rem 0; color: #ffffff; background-color: #111111; text-align: center; }
 
 /* Pantallas pequeñas */
 @media (max-width: 576px) {
