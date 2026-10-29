@@ -26,12 +26,14 @@ a { color: #6b5b4b; }
   text-align: center;
 }
 
-/* Secciones, tarjetas y botón */
+/* Secciones y tarjetas */
 .seccion-suave {
   background-color: #f1eee9;
   padding: 3rem 0;
 }
 .tarjeta-servicio { padding: 1.5rem; border-top: 4px solid #6b5b4b; }
+
+/* Botón */
 .boton-principal {
   padding: 0.75rem 2rem;
   color: #ffffff;
